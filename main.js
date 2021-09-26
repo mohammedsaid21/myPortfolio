@@ -2,7 +2,7 @@ let pervScroll = window.pageYOffset;
 // Section When I  Scroll 
 let mySkills = document.querySelector('.skills')
     window.onscroll = function(){
-
+        
     // Skill Offset Top الجزء الي فوق السيكشن تبعنا الي هوا (ماي سكيلز)
     let offsetY = mySkills.offsetTop;
     console.log(offsetY)
