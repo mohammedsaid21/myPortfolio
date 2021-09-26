@@ -37,8 +37,8 @@ let mySkills = document.querySelector('.skills')
 let cardVeiw = document.querySelectorAll('.main-divaider .imgG img')
 let imges = document.getElementById('asdasd')
 
-let popupBox 
-cardVeiw.forEach(img => {
+let popupBox
+cardVeiw.forEach((img , index) => {
     img.onclick = function(){
     // // Create The Popup Div 
         popupBox = document.createElement('div');
@@ -49,13 +49,26 @@ cardVeiw.forEach(img => {
         
         popupBox.appendChild(popupImg)
 
-        open('')
+
+        if(index == 0){
+            open('https://mohammedsaid21.github.io/Website-Html-Css-and-JavaScript-/')
+        }
+        if(index == 1){
+          open('https://mohammedsaid21.github.io/Some-Creatvie-WebSite-a-party/')
+        }
+        if(index == 2){
+            open(img.src)
+        }
+        if(index == 3){
+            open('https://mohammedsaid21.github.io/mohammed-Small-Por/')
+        }        
+        if(index == 4){
+            open('img/Screenshot 2021-09-26 at 23-26-47 Mohammed Project.png')
+            // open('img/New folder/Screenshot 2021-08-30 at 23-55-28 Docs.png.png')
+        }
+        if(index == 5){
+            open(img.src)
+        }
 
     }
 });
-
-let button1 = document.querySelector('.Cv')
-
-button1.onclick = function(){
-
-}
